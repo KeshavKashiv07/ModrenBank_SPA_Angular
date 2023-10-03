@@ -1,0 +1,25 @@
+<h3 class="m-2 text-center">Customer Details</h3>
+<div class="m-5">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Customer Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Email</th>
+        <th scope="col">A/c Number</th>
+        <th scope="col">A/c Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cust of customers">
+        <td>{{cust?.id}}</td>
+        <td>{{cust?.name}}</td>
+        <td>{{cust?.age}}</td>
+        <td>{{cust?.email}}</td>
+        <td>{{cust?.account_number}}</td>
+        <td>₹ {{cust?.blance}}</td>
+      </tr>
+    </tbody>
+</table>
+</div>

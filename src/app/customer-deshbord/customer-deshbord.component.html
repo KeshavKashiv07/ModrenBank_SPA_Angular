@@ -1,0 +1,67 @@
+
+<div class="outer-container">
+    <section class="mainContainer">
+        <div class="detailBox">
+            <label>Name</label>
+            <h4>{{getCustomer.name}}</h4>
+        </div>
+
+        <div class="detailBox">
+            <label>DOB</label>
+            <h4>{{getCustomer.dob}}</h4>
+        </div>
+
+        <div class="detailBox">
+            <label>Age</label>
+            <h4>{{getCustomer.age}}</h4>
+        </div>
+
+        <div class="detailBox">
+            <label>Email</label>
+            <h4>{{getCustomer.email}}</h4>
+        </div>
+    </section>
+
+    <section class="mainContainer">
+        <div class="detailBox">
+            <label>Phone no.</label>
+            <h4>+91 {{getCustomer.phoneNo}}</h4>
+        </div>
+
+        <div class="detailBox">
+            <label>A/c number</label>
+            <h4>{{getCustomer.account_number}}</h4>
+        </div>
+
+        <div class="detailBox">
+            <label>IFSC</label>
+            <h4>{{getCustomer.IFSC}}</h4>
+        </div>
+
+        <div class="detailBox">
+            <label>Branch code</label>
+            <h4>{{getCustomer.branch_code}}</h4>
+        </div>
+
+    </section>
+
+    <section class="mainContainer">
+        <div class="detailBox">
+            <label>A/c balance</label>
+            <h4>₹ {{getCustomer.blance}}</h4>
+        </div>
+    </section>
+
+</div>
+
+<div class="Amount">
+    <div class="input-group mb-3 ms-5">
+        <input type="number" placeholder=" Amount" aria-label="Recipient's username" aria-describedby="button-addon2" [(ngModel)]="deposit_amt">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="deposit()">Deposit</button>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="number" placeholder=" Amount" aria-label="Recipient's username" aria-describedby="button-addon2" [(ngModel)]="withdraw_amt">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="withdraw()">withdraw</button>
+    </div>
+</div>

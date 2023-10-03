@@ -1,0 +1,68 @@
+
+<div class="mainContainer">
+    <form class="row g-3 needs-validation" (ngSubmit)="AddCustomer()" #customerForm="ngForm" novalidate>
+        <div class="col-md-4">
+          <label class="form-label">Enter Name</label>
+          <input class="form-control" type="text" name="name" required #name="ngModel" [(ngModel)]="customer.name">
+        </div>
+
+        <div class="col-md-4">
+          <label class="form-label">Enter DOB</label>
+          <input type="text" class="form-control" name="dob" required #dob="ngModel" [(ngModel)]="customer.dob">
+        </div>
+
+        <div class="col-md-4">
+          <label class="form-label">Enter Age</label>
+          <input type="text" class="form-control" name="age" required #age="ngModel" [(ngModel)]="customer.age">
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Enter Email</label>
+          <input type="text" class="form-control" name="email" required #email="ngModel" [(ngModel)]="customer.email">
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">Enter Ph.</label>
+          <input type="text" class="form-control" name="phoneNo" required #phoneNo="ngModel" [(ngModel)]="customer.phoneNo">          
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">Enter Account no.</label>
+          <input type="text" class="form-control" name="account_number" placeholder="Hint: start with 101009030.." required #account_number="ngModel" [(ngModel)]="customer.account_number">
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Enter IFSC Code</label>
+            <input type="text" class="form-control" name="IFSC" required value="MBIND050" #IFSC="ngModel" [(ngModel)]="customer.IFSC">          
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Enter Branch Code</label>
+            <input type="text" class="form-control" name="branch_code" required value="101" #branch_code="ngModel" [(ngModel)]="customer.branch_code">          
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Enter Deposit Amt</label>
+            <input type="number" class="form-control" name="blance" required #balance="ngModel" [(ngModel)]="customer.blance">          
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Enter Customer ID</label>
+            <input type="text" class="form-control" name="id" placeholder="Hint: 4 digits no." required #id="ngModel" [(ngModel)]="customer.id">          
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary m-2" type="submit">Submit form</button>
+          <button class="btn btn-primary" type="reset">Resets form</button>
+        </div>
+      </form>
+</div>

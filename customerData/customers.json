@@ -1,0 +1,52 @@
+{
+  "customers": [
+    {
+      "id": 123,
+      "name": "Keshav kashiv",
+      "dob": "07/11/1999",
+      "age": 23,
+      "email": "keshavkashiv@gmail.com",
+      "phoneNo": 9650764456,
+      "account_number": 101009030123,
+      "IFSC": "MBIND050",
+      "branch_code": "101",
+      "blance": 90000
+    },
+    {
+      "id": 1234,
+      "name": "Harsh malik",
+      "dob": "11/01/1999",
+      "age": 23,
+      "email": "harshMalik@gmail.com",
+      "phoneNo": 9656434456,
+      "account_number": 101009030123,
+      "IFSC": "MBIND050",
+      "branch_code": "101",
+      "blance": 50000
+    },
+    {
+      "name": "Keshav",
+      "dob": "06/03/1974",
+      "age": "24",
+      "email": "keshavkashiv9650@gmail.com",
+      "phoneNo": "7894561230",
+      "account_number": "101009030876",
+      "IFSC": "ABC123",
+      "branch_code": "101",
+      "blance": 5000,
+      "id": "4321"
+    },
+    {
+      "name": "Tarun Singh",
+      "dob": "15/01/1975",
+      "age": "20",
+      "email": "Rahul@gmail.com",
+      "phoneNo": "7894561230",
+      "account_number": "101009030888",
+      "IFSC": "ABC123",
+      "branch_code": "101",
+      "blance": 7000,
+      "id": "4004"
+    }
+  ]
+}

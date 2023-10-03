@@ -1,0 +1,8 @@
+<div class="mt-5">
+<h3 class="fw-normal">Enter your Customer Id</h3>
+</div>
+
+<div>
+<input type="text" placeholder=" Customer Id" [(ngModel)]="id" >
+<Button  (click)="findCustomer()" type="submit" routerLink="../customerDashbord/{{customer_id}}">login</Button>
+</div>
